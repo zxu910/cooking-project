@@ -1,0 +1,93 @@
+html,body{
+    
+        background-color:#f9c382;
+      
+       
+    }
+    
+    #logo{
+    
+        position:absolute;
+        top:0;
+        left:0;
+    
+        
+    }
+    
+    
+    #menu{
+    
+        position:absolute;
+        left:600px;
+        top:660px;
+        z-index:3;
+    }
+    
+    #countdown-button{
+                
+                position:absolute;  
+                left:580px;
+                top:710px;
+                z-index:3;
+                width:100px;
+                height:30px;
+                border:none;  /* 把border 改成none 就可以調整button高度了 */
+                
+
+            }
+
+            #countdown-button:hover{
+
+                background-color:#CB4042;
+                color:white;
+
+            }
+        
+    
+    #pic1,#pic2,#pic3,#pic4{
+    
+    
+    
+        top:460px;
+        left:500px;
+        position:relative;
+        z-index:3;
+        display:none;
+    
+      
+    }
+    
+    #pic0{
+    
+        top:460px;
+        left:500px;
+        position:relative;
+        z-index:3;
+        display:block;
+  
+    
+    }
+    
+    #pot{
+    
+        top:200px;
+        left:200px;
+        z-index:0;
+        position:absolute;
+        display:block;
+    
+    }
+    #potup{
+    
+        position:absolute;
+        z-index:3;
+        top:120px;
+        left:210px;
+        display:block;
+    
+    }
+   
+
+  
+
+    
