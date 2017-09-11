@@ -35,20 +35,28 @@ var startCountDown = function()
            var e = document.getElementById('countdown-button'); 
 
            var loop = function(){
-                    e.value = "剩下"+(--count)+' 秒';
-                   if ( count > 0 )
-                           setTimeout(loop, duration); //持續倒數
-                   else 
-                   {
+
+            e.value = "剩下"+(--count)+' 秒';
+
+            if ( count > 0 )
+
+                    setTimeout(loop, duration); //持續倒數
+            else 
+            {
                            
-                           e.value = '餐點好囉！！！';
+            e.value = '餐點好囉！！！';
 
-                           e.style.backgroundColor="#CB4042";
-                           e.style.color="#FFFFFF";
+            e.style.backgroundColor="#CB4042";
+            e.style.color="#FFFFFF";
 
-                           document.getElementById("countdown-button").disabled=true;
-                          
-                          
+         
+            document.getElementById("countdown-button").disabled=true;
+
+            document.getElementById("potup").classList.add("finish");
+            document.getElementById("cloudone").classList.add("finishflowone");
+            document.getElementById("cloudtwo").classList.add("finishflowtwo");
+            document.getElementById("countdown-button").disabled=true;
+            
                    }
            };
 
@@ -106,4 +114,19 @@ var startCountDown = function()
  onload=function setpic(){}
 
 }
+
+function move(){
+
+    document.getElementById("potup").classList.add("move");
+    document.getElementById("cloudone").classList.add("flow");
+
+}
+
+
+
+
+
+
+
+
    
